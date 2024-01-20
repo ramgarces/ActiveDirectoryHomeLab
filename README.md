@@ -1,7 +1,7 @@
 <h1>Active Directory Home Lab</h1>
 
 <h2>Description</h2>
-In this project I will set up a Windows 10 Active Directory Home Lab using Oracle VirtualBox. 
+In this project I will set up a Windows 10 Active Directory Home Lab using Oracle VirtualBox. The first part of the project will consist of setting up the Virtual Machines (VMs) for the Domain Controller and the client that will utilize the Domain Controller. The second part of the project will be adding user accounts using PowerShell.
 
 <h2>Programs and Utilities Used</h2>
 
@@ -41,6 +41,46 @@ Renaming the Domain Controller VM to something more simple:  <br/>
 <br />
 
 <p align="center">
-Renaming the Domain Controller VM to something more simple:  <br/>
+Configuring the IP addressing for the internal NIC:  <br/>
+<img src="https://i.imgur.com/m1tRsYG.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+Beginning the process of installing the Active Directory Domain Services:  <br/>
+<img src="https://i.imgur.com/fWIx1fY.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+Adding the features for the Active Directory Domain Services:  <br/>
+<img src="https://i.imgur.com/xmENhDu.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+Active Directory Domain Services have been installed on the Domain Controller:  <br/>
+<img src="https://i.imgur.com/yJxz0Sv.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+After the feature installation some Post-deployment Configuration must be done. This can be found on the top right of the Server Manager window indicated by a flag and a yellow notification icon:  <br/>
+<img src="https://i.imgur.com/yjZmHQu.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+Going through the Post-deployment configuration which includes adding and naming a new forest on the domain:  <br/>
+<img src="https://i.imgur.com/EU2SEGu.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+Finishing the Post-deployment configuration process:  <br/>
+<img src="https://i.imgur.com/i7pElcz.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+The Domain Controller VM after restarting now shows the administrator account with the domain name that was assigned:  <br/>
+<img src="https://i.imgur.com/GR5W2vq.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+The Domain Controller VM after restarting now shows the administrator account with the domain name that was assigned:  <br/>
 <img src="" height="80%" width="80%" alt="Domain Controller VM information"/>
 <br />
