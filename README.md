@@ -81,6 +81,81 @@ The Domain Controller VM after restarting now shows the administrator account wi
 <br />
 
 <p align="center">
-The Domain Controller VM after restarting now shows the administrator account with the domain name that was assigned:  <br/>
+Now, to create an administrator account separate from the default administrator account a new Organizational Unit (OU) is created:  <br/>
+<img src="https://i.imgur.com/lJVbxfQ.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+A new user is then created inside the new OU:  <br/>
+<img src="https://i.imgur.com/MblmvrY.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+Creating the new user account (the 'a' is to indicate it is an administrator account):  <br/>
+<img src="https://i.imgur.com/XObvrw6.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+The new account is then added to the 'Domain Admins' group from the properties in order to give it administrative rights:  <br/>
+<img src="https://i.imgur.com/5KktJop.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+Logging into the new administrator account on the DC:  <br/>
+<img src="https://i.imgur.com/f0dvDCU.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+Next, RAS and NAT are being installed so that the client VM can access the normal internet through the DC:  <br/>
+<img src="https://i.imgur.com/Y12X9ZM.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+Navigating to 'Routing and Remote Access' after the installation finished:  <br/>
+<img src="https://i.imgur.com/OQp1iT3.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+Beginning the process of enabling and configuring Routing and Remote Access:  <br/>
+<img src="https://i.imgur.com/eqfDSui.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+Configuring the NAT option through the Routing and Remote Access Server Setup Wizard:  <br/>
+<img src="https://i.imgur.com/sjwixVl.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+Selecting the NIC that will be used for access to the Internet:  <br/>
+<img src="https://i.imgur.com/tYBVe6R.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+The Routing and Remote Access (NAT) setup is complete and is indicated by a green arrow on the DC icon in the window:  <br/>
+<img src="https://i.imgur.com/xyA6g4l.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+Beginning the process of installing a DHCP server role on the DC:  <br/>
+<img src="https://i.imgur.com/YEDEWL8.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+Configuring the new scope that the DHCP server will assign addresses from:  <br/>
+<img src="https://i.imgur.com/kGCQlX2.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+During the DHCP configuration options, the DC's IP address is added as the router used by clients:  <br/>
+<img src="https://i.imgur.com/Zh1n9yR.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+The scope now appears in the DHCP role window:  <br/>
+<img src="https://i.imgur.com/WsAlDAe.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+The scope now appears in the DHCP role window:  <br/>
 <img src="" height="80%" width="80%" alt="Domain Controller VM information"/>
 <br />
