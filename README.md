@@ -156,6 +156,66 @@ The scope now appears in the DHCP role window:  <br/>
 <br />
 
 <p align="center">
-The scope now appears in the DHCP role window:  <br/>
-<img src="" height="80%" width="80%" alt="Domain Controller VM information"/>
+Next, PowerShell will be used to generate accounts with random names. This is a screenshot of a portion of the names in the file that will be used:  <br/>
+<img src="https://i.imgur.com/zhiOtkL.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+Here is the PowerShell script used to generate the accounts from the names file:  <br/>
+<img src="https://i.imgur.com/ug7ClL8.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+After the PowerShell script has finished running, the _USERS OU can now be seen in Active Directory, and inside that OU all of the new user accounts have been created:  <br/>
+<img src="https://i.imgur.com/F1mOiDn.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+Now, a client VM is created that will utilize the DC:  <br/>
+<img src="https://i.imgur.com/liQIPhL.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+Windows 10 <strong>Pro</strong> is installed on the client VM since it is the version of Windows that can join the domain:  <br/>
+<img src="https://i.imgur.com/PsRSobZ.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+Creating a local user account on the client VM:  <br/>
+<img src="https://i.imgur.com/gUNgZnv.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+The DC (in the backround) and the Client VMs running simultaneously, showing the Client VM network configuration:  <br/>
+<img src="https://i.imgur.com/2M8aQ6G.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+Running some pings on the Client VM to test connectivity to the internet:  <br/>
+<img src="https://i.imgur.com/omTBQFt.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+Renaming the Client PC and joining the domain from the System Properties:  <br/>
+<img src="https://i.imgur.com/8Am2Vog.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+The Client VM has successfully joined mydomain.com:  <br/>
+<img src="https://i.imgur.com/R2jwjwD.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+An IP address has been leased to the client and can be seen from the DHCP window on the DC:  <br/>
+<img src="https://i.imgur.com/nR3GFiT.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+Now, one of the user accounts created earlier in the lab can be used on the Client VM to login to the domain:  <br/>
+<img src="https://i.imgur.com/dqTmKVG.png" height="80%" width="80%" alt="Domain Controller VM information"/>
+<br />
+
+<p align="center">
+Using <code>whoami</code> in command line to confirm that the account is signed in through the domain on the Client VM:  <br/>
+<img src="https://i.imgur.com/W10lasD.png" height="80%" width="80%" alt="Domain Controller VM information"/>
 <br />
